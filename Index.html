@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Awesome Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, #101020, #392080);
+        }
+
+        .container {
+            width: min(90%, 700px);
+            padding: 50px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 24px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: clamp(42px, 9vw, 80px);
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>YOOOOO! 🔥</h1>
+
+        <p>
+            Welcome to my first GitHub Pages website!
+        </p>
+
+        <button onclick="sayHello()">Click me</button>
+    </main>
+
+    <script>
+        function sayHello() {
+            alert("THE WEBSITE WORKS! 😎");
+        }
+    </script>
+</body>
+</html>
